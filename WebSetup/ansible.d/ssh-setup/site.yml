@@ -1,0 +1,19 @@
+---
+
+# Configure ssh on admin
+- hosts: admin
+  become: yes
+  become_method: sudo
+  roles:
+    - ssh-admin
+
+#configure ssh on web
+- hosts: web
+#  vars_files: 
+#    - roles/tomcat/vars/main.yml
+  become: yes
+  become_method: sudo
+  roles:
+    - ssh-web
+
+     

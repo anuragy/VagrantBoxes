@@ -1,0 +1,8 @@
+---
+   - name: Copy war file
+     copy:
+       src: /vagrant/staging.d/TestWebApp.war
+       dest: /var/lib/tomcat7/webapps
+       owner: tomcat7
+       group: tomcat7
+

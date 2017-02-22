@@ -1,7 +1,6 @@
 <h1>Project for demonstrating use of Vagrant and Ansible</h1>
 
-<h3># Vagrant</h3>
-<h3># Ansible </h3>
+<h3># Vagrant, # Ansible </h3>
 
 <p>There are three projects:</p>
 <ol>

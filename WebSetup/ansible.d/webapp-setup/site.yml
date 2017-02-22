@@ -2,8 +2,6 @@
 
 #configure tomcat
 - hosts: web
-#  vars_files: 
-#    - roles/tomcat/vars/main.yml
   become: yes
   become_method: sudo
   roles:

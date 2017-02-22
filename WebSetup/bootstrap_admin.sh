@@ -31,6 +31,10 @@ ssh-keyscan localhost >> ~/.ssh/known_hosts
 
 echo ------------------ Done ----------------
 
+echo --------- Installing Telnet -----------
+sudo apt-get -y install telnetd
+echo ------------------ Done ----------------
+
 echo --------- Installing Ansible -----------
 # install ansible (http://docs.ansible.com/intro_installation.html)
 sudo apt-get install software-properties-common

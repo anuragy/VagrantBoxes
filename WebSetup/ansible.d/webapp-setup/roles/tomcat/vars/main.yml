@@ -1,6 +1,0 @@
----
-
-tomcatport: 8080
-
-tomcat_admin_username: admin
-tomcat_admin_password: admin

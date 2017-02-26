@@ -2,10 +2,6 @@
 
 echo --------- Start - bootstrap_admin.sh ---
 
-echo --------- Copying ssh keys ------------
-cp -p /vagrant/id_rsa* /home/vagrant/.ssh/
-echo ------------------ Done ----------------
-
 echo --------- Installing Telnet -----------
 sudo apt-get -y install telnetd
 echo ------------------ Done ----------------

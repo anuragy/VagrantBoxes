@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
   end  
 
   config.vm.define "admin" do |admin_config|
-    admin_config.vm.box = "UbuntuTrusty64Web"
+    admin_config.vm.box = "UbuntuTrusty64Admin"
     admin_config.vm.network :private_network, ip: "192.168.56.101"
     admin_config.vm.hostname = "admin"
     admin_config.vm.provider "virtualbox" do |vb|

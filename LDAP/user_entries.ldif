@@ -1,0 +1,74 @@
+dn: ou=Groups,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+dn: ou=Roles,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: Roles
+
+dn: ou=People,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: People
+
+
+dn: cn=Administrators,ou=Groups,dc=newtechways,dc=com
+objectClass: groupOfNames
+description: Administrators Group
+member: uid=anurag,ou=People,dc=newtechways,dc=com
+
+dn: cn=Users,ou=Groups,dc=newtechways,dc=com
+objectClass: groupOfNames
+description: Users Group
+member: uid=john,ou=People,dc=newtechways,dc=com
+member: uid=bob,ou=People,dc=newtechways,dc=com
+
+
+dn: cn=Admin,ou=Roles,dc=newtechways,dc=com
+objectClass: organizationalRole
+ou: Roles
+roleOccupant: cn=Administrators,ou=Groups,dc=newtechways,dc=com
+
+
+dn: cn=User,ou=Roles,dc=newtechways,dc=com
+objectClass: organizationalRole
+ou: Roles
+roleOccupant: cn=Users,ou=Groups,dc=newtechways,dc=com
+
+
+dn: uid=anurag,ou=People,dc=newtechways,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+ou: People
+cn: Anurag
+sn: Yadav
+uid: anurag
+userPassword: password
+mail: anurag.yadav@newtechways.com
+telephoneNumber: 72591xxxxx
+description: Anurag Yadav 
+
+dn: uid=john,ou=People,dc=newtechways,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+ou: People
+cn: John
+sn: Doe
+uid: john
+userPassword: password
+mail: anurag.yadav@newtechways.com
+telephoneNumber: 72591xxxxx
+description: John user for openldap
+
+dn: uid=bob,ou=People,dc=newtechways,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+ou: People
+cn: Bob
+sn: Smith
+uid: bob
+userPassword: password
+mail: anurag.yadav@newtechways.com
+telephoneNumber: 72591xxxxx
+description: John user for openldap
+
+

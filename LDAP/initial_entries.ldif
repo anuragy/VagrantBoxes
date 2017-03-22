@@ -1,0 +1,14 @@
+#Organization for Example Corporation
+dn: dc=newtechways,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: newtechways
+o: New Tech Ways 
+description: New Tech Ways, Bangalore
+
+# Organizational Role for Directory Manager
+dn: cn=Manager,dc=newtechways,dc=com
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+

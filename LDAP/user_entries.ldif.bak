@@ -1,0 +1,76 @@
+dn: cn=Anurag,dc=newtechways,dc=com
+objectClass: person
+sn: Yadav
+cn: Anurag
+userPassword: password
+telephoneNumber: 72591xxxxx
+description: Anurag user for openldap
+
+n: cn=Nitoo,dc=newtechways,dc=com
+objectClass: inetOrgPerson
+sn: Yadav
+cn: Nitoo
+userPassword: password
+telephoneNumber: 72591xxxxx
+description: Nitoo user for openldap
+uid: nmishra
+
+
+
+dn: ou=SysAdmin,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: SysAdmin
+description: System Administrators
+
+dn: cn=Arjun,dc=newtechways,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: Yadav
+cn: Arjun
+userPassword: password
+telephoneNumber: 72591xxxxx
+description: Nitoo user for openldap
+uid: arjuny
+ou: SysAdmin
+
+
+
+
+dn: ou=Groups,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=HR,ou=Groups,dc=newtechways,dc=com
+objectClass: groupOfNames
+cn: HR
+ou: Groups
+description: Human Resources 
+member: cn=John,ou=People,dc=newtechways,dc=com
+
+dn: ou=People,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: cn=John,ou=People,dc=newtechways,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+sn: John
+cn: Doe
+userPassword: password
+telephoneNumber: 72591xxxxx
+description: John user for openldap
+uid: john
+ou: People
+
+
+
+dn: ou=Roles,dc=newtechways,dc=com
+objectClass: organizationalUnit
+ou: Roles
+
+dn: cn=Admin,ou=Roles,dc=newtechways,dc=com
+objectClass: organizationalRole
+ou: Roles
+roleOccupant: cn=John,ou=People,dc=newtechways,dc=com
+roleOccupant: cn=Anurag,dc=newtechways,dc=com
+

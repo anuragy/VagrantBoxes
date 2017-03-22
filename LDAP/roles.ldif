@@ -1,0 +1,11 @@
+dn: cn=Admin,dc=newtechways,dc=com
+objectClass: organizationalRole
+cn: Admin
+description: Administrator Role
+
+dn: cn=User,dc=newtechways,dc=com
+objectClass: organizationalRole
+cn: User
+description: User Role
+
+
